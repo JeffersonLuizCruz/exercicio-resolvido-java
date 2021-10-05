@@ -2,24 +2,25 @@ package com.exercicio.array;
 
 import java.util.Scanner;
 
-public class ApplicationProgramming02 {
+public class ApplicationProgramming03 {
 	public static void main(String[] args) {
 		
 		/**
-		 * 02 - Criar um vetor A com 8 elementos inteiros. constuir um vetor B de mesmo tipo e 
-		 * tamnho e com os elementos do vetor A multiplicados por 2, ou seja: B[i] = A[i] * 2.
+		 * 03 - Criar um vetor A com 15 elementos inteiros. Construir um vetor B de mesmo tipo e tamanho, sendo que cada elemento do
+		 * 		vetor B deverá ser o quadrado do respectivo elemento de A, ou seja: B[i] = A[i] * A[i] .
 		 * */
+		
 		
 		Scanner input = new Scanner(System.in);
 		
-		int[] A = new int[5];
-		int[] B = new int[5];
+		int[] A = new int[15];
+		int[] B = new int[15];
 		
 		for(int i = 0; i < A.length; i++) {
 			System.out.print("Informe um valor: ");
 			A[i] = input.nextInt();
 			
-			B[i] = A[i] * 2;
+			B[i] = A[i] * A[i];
 		}
 		
 		System.out.print("Vetor A = ");
