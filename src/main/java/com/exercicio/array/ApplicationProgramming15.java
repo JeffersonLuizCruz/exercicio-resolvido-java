@@ -17,6 +17,7 @@ public class ApplicationProgramming15 {
 		int qtdImpa = 0;
 		double porcentImpa = 0;
 		double porcentPar = 0;
+		
 		for(int i = 0; i < A.length; i++) {
 			System.out.print("Informe um valor: ");
 			A[i] = input.nextInt();
