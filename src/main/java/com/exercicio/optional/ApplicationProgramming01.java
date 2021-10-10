@@ -1,22 +1,20 @@
-package com.exercicio.array;
+package com.exercicio.optional;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class ApplicationProgrammingTeste {
+public class ApplicationProgramming01 {
 	
-
 	static Optional<Object> filterVariableNull(String value) {
 		return Optional.ofNullable(value);
-		
 	}
 	
 	static Optional<Object> filterVariableNull(Integer value) {
-		return  Optional.ofNullable(value);
-		
+		return Optional.ofNullable(value);		
 	}
+	
 	public static void main(String[] args) {
 		String result = null;
 		//filterVariableNull(result).ifPresent(n -> System.out.println(n));
@@ -37,6 +35,7 @@ public class ApplicationProgrammingTeste {
 		}
 		
 		System.out.println(soma);
+		
 	}
 
 }
