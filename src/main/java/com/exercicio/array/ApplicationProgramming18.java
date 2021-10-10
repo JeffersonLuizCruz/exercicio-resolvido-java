@@ -22,6 +22,9 @@ public class ApplicationProgramming18 {
 			if(A[i] > 35) {
 				idade++;
 			}
-	}}
+		}
+		
+		System.out.println("Número de vezes de pessoas com idade maior que 35 anos: " + idade);
+	}
 
 }
