@@ -7,7 +7,12 @@ public class ApplicationProgramming01 {
 		
 		List<TamplateCSV> t = new TamplateService().listAll();
 		
-		System.out.println(t.get(1).getCategoria());
-	}
+		System.out.println("Tamanho do Array " + t.size());
+		System.out.println("Array na posição [0] " + t.get(0));
+		
+		t.stream()
+		.forEach(n -> System.out.println(n));
+		
+		}
 
 }

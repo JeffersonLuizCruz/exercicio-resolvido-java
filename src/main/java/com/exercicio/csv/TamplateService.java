@@ -16,7 +16,7 @@ public class TamplateService {
 			input = new Scanner(Paths.get("tamplate.csv"));
 			input.nextLine();
 		
-			while(input.hasNext()) {
+			while(input.hasNextLine()) {
 				String[] arrayString = input.nextLine().split(",");
 				TamplateCSV t = new TamplateCSV();
 				t.setCategoria(arrayString[0]);
