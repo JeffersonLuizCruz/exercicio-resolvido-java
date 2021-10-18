@@ -1,0 +1,5 @@
+CATEGORIA,PRODUTO,PRECO,CATALOGO, CUIT, Compania, Fecha de Recepcion, Fecha de Factura, Concepto, Tipo de Factura, Presupuesto, Moneda, Percepciones IVA RG, IVA, Importe No Grabado, Importe Grabado, Importe Sin IVA, Total, Cuentas Contables, Percepcion de IIBB CABA, Percepcion de IIBB BS AS u otras jurisdicciones, Percepcion de IVA, Medio de pago, Banco, CBU, Numero Proveedor SAP, Numero Impositivo SAP
+Alimentos,Arroz,7.8,PROMOCAO,,,,,,,,,,,,,,,,,,,,,,,
+Limpeza,Sabao,8.3,AVISTA,84569, RCI, 15/10/2021, 15/10/2021, Concepto, Factura, Marketing, Pesos, 5.00, 6.0, 8.00, 4.00, 12.0, 5023.0,11111111111,113320003, ,113330034, P, RIO06,7777777,7777777,777777
+Bebidas,Cerveja,2.35,PROMOCAO,,,,,,,,,,,,,,,,,,,,,,,
+Frios,Queijo,3.6,AVISTA,,,,,,,,,,,,,,,,,,,,,,,
