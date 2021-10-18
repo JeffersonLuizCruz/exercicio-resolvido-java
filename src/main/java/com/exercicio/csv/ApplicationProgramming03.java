@@ -10,7 +10,7 @@ public class ApplicationProgramming03 {
 	public static void main(String[] args) {
 		
 		 String path = "tamplate.csv";
-		 List<TamplateCSV> listCSV = new ArrayList<TamplateCSV>();
+		 List<TamplateCSV> listCSV = new ArrayList<>();
 		 
 			try(BufferedReader br = new BufferedReader(new FileReader(path))){
 				
@@ -29,8 +29,7 @@ public class ApplicationProgramming03 {
 					
 					line = br.readLine();
 				}
-				
-				
+								
 				listCSV.stream().forEach(n -> System.out.println(n));
 				
 			}catch(IOException e) {
