@@ -60,6 +60,13 @@ public class ApplicationProgramming01 {
 		//Exemplo: 06
 		System.out.println(soma);
 		
+		Provider p = new Provider();
+		p.setName(null);
+		
+		Object nomeProvider = verifyExistNPE(p.getName()).orElse("");
+		
+		System.out.println("Nome do provedor: " + nomeProvider);
+		
 	}
 
 }
