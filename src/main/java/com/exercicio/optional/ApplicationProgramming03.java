@@ -20,7 +20,7 @@ public class ApplicationProgramming03 {
 		String cbu = "345";
 		String countaContable = null; //Exceoption: IndexOutOfBoundsException
 		
-		List<String> listProvider = new ArrayList<>(Arrays.asList(name, email, cuit, numSap, cbu, countaContable));
+		List<String> listProvider = new ArrayList<>(Arrays.asList(null,null));
 		
 		List<String> providerValue = listProvider.stream()
 					.filter(value -> value != null)
@@ -41,17 +41,17 @@ public class ApplicationProgramming03 {
 		map.put("cuit", providerValue.get(2));
 		map.put("numSap", providerValue.get(3));
 		map.put("cbu", providerValue.get(4));
-		//map.put("countaContable", providerValue.get(5)); //Exceoption: IndexOutOfBoundsException
+		map.put("countaContable", providerValue.get(5)); //Exceoption: IndexOutOfBoundsException
 		
 		System.out.println(map.values());
 		
 		
-		System.out.println(providerValue.get(0));
-		System.out.println(providerValue.get(1));
-		System.out.println(providerValue.get(2));
-		System.out.println(providerValue.get(3));
-		System.out.println(providerValue.get(4));
-		//System.out.println(providerValue.get(5)); //Exceoption: IndexOutOfBoundsException
+		System.out.println(listOptional.get(0));
+		System.out.println(listOptional.get(1));
+		System.out.println(listOptional.get(2));
+		System.out.println(listOptional.get(3));
+		System.out.println(listOptional.get(4));
+		System.out.println(providerValue.get(5)); //Exceoption: IndexOutOfBoundsException
 		
 		
 		
