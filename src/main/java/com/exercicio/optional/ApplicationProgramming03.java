@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ApplicationProgramming03 {
 	public static void main(String[] args) {
@@ -33,7 +34,7 @@ public class ApplicationProgramming03 {
 														.collect(Collectors.toList());
 		
 		System.out.println(listOptional);
-		
+				
 		Map<String, String> map = new HashMap<>();
 		
 		map.put("name", providerValue.get(0));
@@ -52,8 +53,6 @@ public class ApplicationProgramming03 {
 		System.out.println(listOptional.get(3));
 		System.out.println(listOptional.get(4));
 		System.out.println(providerValue.get(5)); //Exceoption: IndexOutOfBoundsException
-		
-		
 		
 	}
 
