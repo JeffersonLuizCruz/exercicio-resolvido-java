@@ -36,4 +36,11 @@ public class Cliente {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [nome=" + nome + ", cidade=" + cidade + ", estado=" + estado + "]";
+	}
+	
+	
 }
