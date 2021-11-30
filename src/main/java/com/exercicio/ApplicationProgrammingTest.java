@@ -3,31 +3,12 @@ package com.exercicio;
 public class ApplicationProgrammingTest {
 	public static void main(String[] args) {
 		
-		String s = "01234010";
-		s = s.replaceFirst ("^0", "");
-		
-		String concatencao = "";
-		String nome1 = "hugo";
-		String nome2 = "luiz";
-		String[] array = {"hugo", "jeff", "luiz", "carol"};
-		
-
-		for(int i = 0; i < array.length; i++) {
-			
-		String result = "";
-			
-		if(nome1.contains(array[i])) {
-			result = nome1.substring(0,2);
+		int[] numero = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		String[] nome = {"Jeff Luiz Cruz"};
+		for (int i = 0; i < numero.length; i++) { 
+		    if (i % 2 != 0) {
+		        System.out.println("Numero valido!, valor impar:".substring(0,6));
+		    }
 		}
-		
-		if(nome2.contains(array[i])) {
-			result = nome2.substring(2,4);
-		}
-		concatencao += result;
 	}
-		
-		
-		System.out.println(concatencao);
-	}
-
 }
