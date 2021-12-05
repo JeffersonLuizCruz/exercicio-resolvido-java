@@ -1,7 +1,7 @@
 package com.exercicio.array.matriz;
 
 public enum Opcao {
-	INSERIR(1),
+	AGENDAR(1),
 	CONSULTAR(2),
 	SAIR(0);
 	

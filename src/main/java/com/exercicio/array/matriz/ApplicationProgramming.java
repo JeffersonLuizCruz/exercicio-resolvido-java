@@ -14,13 +14,13 @@ public class ApplicationProgramming {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		int[][] compromisso = new int[24][31];
+		String[][] compromissos = new String[24][31];
 		
 		boolean condicao = false;
 		byte menu = 0;
 		int dia = 0;
 		int hora = 0;
-		compromisso[dia][hora] = compromisso[dia][hora];
+		
 		while(!condicao) {
 			System.out.println("Insira 1 para agendar compromisso");
 			System.out.println("Insira 2 para consultar compromisso");
@@ -28,19 +28,32 @@ public class ApplicationProgramming {
 			
 			menu = input.nextByte();
 			
-			if(Opcao.INSERIR.getValor() == menu) {
-				System.out.println("Informe o dia:");
+			if(Opcao.AGENDAR.getValor() == menu) {
+				System.out.print("Informe o dia:");
 				dia = input.nextInt();
 				
-				System.out.println("Informe a hora do compromisso:");
+				System.out.print("Informe a hora do compromisso:");
 				hora = input.nextInt();
 				
-				if(dia >= 31 && hora >= 24) {
-					compromisso[dia][hora] = compromisso[dia][hora];
+				if(dia <= 31 && hora <= 24) {
+					System.out.print("Informe qual compromisso:");
+					compromissos[dia][hora] = input.next();
+				}else {
+					System.out.print("Dia e Hora inválido");
 				}
+				
 			} else if(Opcao.CONSULTAR.getValor() == menu) {
-				System.out.println("Consulta");
-				System.out.println("dia e hora " + compromisso[dia][hora]);
+				System.out.println("Consulta do compromisso:");
+				
+					System.out.print("dia:");
+					dia = input.nextInt();
+					
+					System.out.print("hora:");
+					hora = input.nextInt();
+					System.out.print("Seu compromisso para o dia " + dia + " as " + hora + "h é: ");
+					System.out.println(compromissos[dia][hora]);
+					
+				
 			} else if(Opcao.SAIR.getValor() == menu) {
 				System.out.println("Sair");
 				condicao = true;
@@ -49,5 +62,4 @@ public class ApplicationProgramming {
 			}
 		}
 	}
-
 }
