@@ -22,6 +22,7 @@ public class ApplicationProgramming {
 		int hora = 0;
 		
 		while(!condicao) {
+			System.out.println();
 			System.out.println("Insira 1 para agendar compromisso");
 			System.out.println("Insira 2 para consultar compromisso");
 			System.out.println("Insira 0 para sair");
@@ -39,7 +40,8 @@ public class ApplicationProgramming {
 					System.out.print("Informe qual compromisso:");
 					compromissos[dia][hora] = input.next();
 				}else {
-					System.out.print("Dia e Hora inválido");
+					System.out.print("!!!!!!!!!!!Dia ou Hora inválido!!!!!!!!!!!!!!!!");
+					System.out.println();
 				}
 				
 			} else if(Opcao.CONSULTAR.getValor() == menu) {

@@ -54,7 +54,7 @@ public class ApplicationProgramming03 {
 		      
 		      for (String estado : clientesPorEstado.keySet()) {
 		         System.out.println(estado + ": " + clientesPorEstado.get(estado));
-		         
+
 		      }
 		      System.out.println("-----------");
 		      Map<String, List<Cliente>> clientesPorEstadoLambda = agrupaPorEstadoLambida(clientes);
