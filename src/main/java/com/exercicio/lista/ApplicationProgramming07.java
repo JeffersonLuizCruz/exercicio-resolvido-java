@@ -22,9 +22,14 @@ public class ApplicationProgramming07 {
 		listbidimensional.add(coluna);
 		listbidimensional.add(linha);
 		
-		for(int i = 0; i < listbidimensional.size(); i++) {
-			for(int j = 0; j < listbidimensional.size(); j++) {
-				 System.out.print(listbidimensional.get(i).get(j)+" ");
+		for(int i = 0; i < arrayLinha.size(); i++) {
+			for(int j = 0; j < arrayColumn.size(); j++) {
+				try {
+					 System.out.printf("%s", listbidimensional.get(i).get(j) + " ");
+				} catch (IndexOutOfBoundsException e) {
+					
+				}
+				
 			}
 			System.out.println("");
 		}		
