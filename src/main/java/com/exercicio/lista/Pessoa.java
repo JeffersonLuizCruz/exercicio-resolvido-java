@@ -2,7 +2,7 @@ package com.exercicio.lista;
 
 public class Pessoa {
 
-	private Long id;
+	private Integer id;
 	private String name;
 	private Double salary;
 
@@ -15,17 +15,17 @@ public class Pessoa {
 	public Pessoa() {
 	}
 
-	public Pessoa(Long id, String name, Double salary) {
+	public Pessoa(Integer id, String name, Double salary) {
 		this.id = id;
 		this.name = name;
 		this.salary = salary;
 	}
 
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

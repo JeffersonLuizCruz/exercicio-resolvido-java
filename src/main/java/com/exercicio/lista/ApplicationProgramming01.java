@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ApplicationProgramming01 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		Long id = 0L;
+		int id = 0;
 		String name = "";
 		double salary = 0.0;
 		
@@ -20,7 +20,7 @@ public class ApplicationProgramming01 {
 			System.out.println("Emplyoee #" + (i + 1) + ":");
 			System.out.println();
 			System.out.print("Id:");
-			id = input.nextLong();
+			id = input.nextInt();
 			System.out.print("Name:");
 			input.nextLine();
 			name = input.nextLine();
@@ -38,9 +38,10 @@ public class ApplicationProgramming01 {
 		
 
 		System.out.print("Informe Id percent:");
-		id = input.nextLong();
-		
+		id = input.nextInt();
+
 		Integer idPessoa = getIdPessoa(listPessoa, id);
+		
 		if(idPessoa == null) {
 			System.out.println("No exist Pessoa");
 		}else {
@@ -56,7 +57,7 @@ public class ApplicationProgramming01 {
 		
 	}
 	
-	public static Integer getIdPessoa(List<Pessoa> pessoas, Long id) {
+	public static Integer getIdPessoa(List<Pessoa> pessoas, int id) {
 		for(int i = 0; i < pessoas.size(); i++) {
 			if(pessoas.get(i).getId() == id) {
 				return  i;

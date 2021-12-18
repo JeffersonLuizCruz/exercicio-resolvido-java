@@ -10,11 +10,11 @@ public class ApplicationProgramming02 {
 		Scanner input = new Scanner(System.in);
 		String nome = "";
 		
-		Pessoa p1 = new Pessoa(0L, "Hugo", null);
-		Pessoa p2 = new Pessoa(1L, "Jefferson", null);
-		Pessoa p3 = new Pessoa(2L, "Luiz", null);
-		Pessoa p4 = new Pessoa(3L, "Jeff", null);
-		Pessoa p5 = new Pessoa(4L, "Carol", null);
+		Pessoa p1 = new Pessoa(0, "Hugo", null);
+		Pessoa p2 = new Pessoa(1, "Jefferson", null);
+		Pessoa p3 = new Pessoa(2, "Luiz", null);
+		Pessoa p4 = new Pessoa(3, "Jeff", null);
+		Pessoa p5 = new Pessoa(4, "Carol", null);
 		
 		List<Pessoa> pessoas = Arrays.asList(p1, p2, p3, p4, p5);
 		System.out.println("####Verificação de id####");
