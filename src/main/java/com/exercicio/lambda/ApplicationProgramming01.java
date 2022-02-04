@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class ApplicationPromming01 {
+public class ApplicationProgramming01 {
 	public static void main(String[] args) {
 		
 		// 01 - Sem stream
