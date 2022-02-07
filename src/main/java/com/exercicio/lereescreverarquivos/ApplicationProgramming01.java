@@ -1,10 +1,13 @@
-package com.exercicio.lerarquivo;
+package com.exercicio.lereescreverarquivos;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Exenplo de leitura de arquivos usando InputStream E Reader
+ * */
 public class ApplicationProgramming01 {
 	public static void main(String[] args) throws IOException {
 		// Também é possível usar a entrada de dados usando o inputStream e Reader. Elas são classes abstratadas e extentidas por FileInputStream e InputStreamReader
@@ -13,7 +16,7 @@ public class ApplicationProgramming01 {
 		
 		
 		FileInputStream file = new FileInputStream("tamplate.csv");
-		InputStreamReader isr = new InputStreamReader(file); // transforma byts em caracteres
+		InputStreamReader isr = new InputStreamReader(file, "UTF-8"); // transforma byts em caracteres
 		BufferedReader br = new BufferedReader(isr); // ler os caracteres e manipula	
 		
 		String readLine = br.readLine();

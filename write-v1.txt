@@ -1,0 +1,4 @@
+Exemplo de escrita de arquivo usando FileWrite
+
+Exemplo de quebra de linha usando o bw.newLine()
+Exemplo de qubra de linha
