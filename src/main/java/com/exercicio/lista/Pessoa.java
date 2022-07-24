@@ -6,8 +6,8 @@ public class Pessoa {
 	private String name;
 	private Double salary;
 
-	public double percentSalary(double percent) {
-		this.salary += this.salary * percent / 100;
+	public double percentSalary(Double percent) {
+		this.salary += (this.salary * percent) / 100;
 
 		return salary;
 	}

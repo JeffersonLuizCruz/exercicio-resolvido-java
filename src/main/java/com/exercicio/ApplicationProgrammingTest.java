@@ -1,13 +1,17 @@
 package com.exercicio;
 
-import com.exercicio.model.Customer;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 public class ApplicationProgrammingTest {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Customer customer;
+		List<String> listaNomes = Arrays.asList("Hugo", "Jefferson", "Luiz", "Cruz");
 		
-		customer = new Customer();
-		System.out.println(customer.getName());
+		listaNomes.set(1, "Jeff");
+		
+		System.out.println("Resultado da Lista: " + listaNomes.toString());
+
 	}
 }

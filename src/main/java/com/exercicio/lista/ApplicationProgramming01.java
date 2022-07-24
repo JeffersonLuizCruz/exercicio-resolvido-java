@@ -42,13 +42,13 @@ public class ApplicationProgramming01 {
 
 		Integer idPessoa = getIdPessoa(listPessoa, id);
 		
-		if(idPessoa == null) {
+		if(id < 0) {
 			System.out.println("No exist Pessoa");
 		}else {
 			System.out.println();
 			System.out.print("Percent information:");
 			double percent = input.nextDouble();
-			listPessoa.get(idPessoa).percentSalary(percent);
+			listPessoa.get(id).percentSalary(percent);
 			System.out.println();
 			System.out.println(listPessoa.toString());
 			
